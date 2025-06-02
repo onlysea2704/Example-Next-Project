@@ -1,11 +1,11 @@
 {
   "crons": [{
     "path": "/api/hello",
-    "schedule": "*/5 * * * *"
+    "schedule": "*/1 * * * *"
   },
   {
     "path": "/api/hello_authen",
-    "schedule": "*/5 * * * *"
+    "schedule": "*/1 * * * *"
   }
 ]
 }

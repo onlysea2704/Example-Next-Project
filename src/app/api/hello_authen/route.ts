@@ -4,6 +4,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server'
 
 export async function GET(req: NextRequest) {
+    console.log(process.env.CRON_SECRET)
     if (req.headers.get('Authorization') !== `Bearer ${process.env.CRON_SECRET}`) {
         return new NextResponse(`Unauthorized ${process.env.CRON_SECRET}`, { status: 401 });
     }
