@@ -2,5 +2,10 @@
   "crons": [{
     "path": "/api/hello",
     "schedule": "*/5 * * * *"
-  }]
+  },
+  {
+    "path": "/api/hello_authen",
+    "schedule": "*/5 * * * *"
+  }
+]
 }
