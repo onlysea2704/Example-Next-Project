@@ -10,7 +10,7 @@ export async function GET() {
     },
     method: 'POST',
   }
-  const url = '/api/post-authen/'
+  const url = 'https://test-security-cronjob.vercel.app/api/post-authen/'
   fetch(url, authHeader)
   return NextResponse.json({ message: 'Hello from modern Next.js API!' });
 }
